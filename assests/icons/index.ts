@@ -1,2 +1,9 @@
-export { default as MeatMask } from "./metamask-icon.svg"
-export { default as Coinbase } from "./coinebase.svg"
+import { BiCalendar } from "react-icons/bi";
+import { BsChevronDown } from "react-icons/bs";
+import { HiPlus } from "react-icons/hi";
+
+export {
+    BiCalendar,
+    BsChevronDown,
+    HiPlus
+}

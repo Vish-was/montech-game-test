@@ -10,7 +10,7 @@ import SelectWidget from "../../widget/select";
 import TabWidget from "../../widget/tab";
 import AvaliableTable from "./AvaliableTable";
 import CompleteTable from "./CompleteTable";
-import { BiCalendar, BsChevronDown, HiPlus } from "../../../icons";
+import { BiCalendar, BsChevronDown, HiPlus } from "../../../assests/icons";
 import moment from "moment";
 
 const IndexHome: FunctionComponent = () => {

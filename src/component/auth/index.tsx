@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import { Coinbase, MeatMask } from "../../../assests/icons";
+import { Coinbase, MeatMask } from "../../../assests/images";
 import ButtonWidget from "../../widget/button";
 import ModalWidget from "../../widget/modal";
 
