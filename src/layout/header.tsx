@@ -6,7 +6,7 @@ import { HEADER_BG_COLOR } from "../utils";
 
 const Header: FunctionComponent<IHeaderProps> = (props) => {
   const { children, metaMaskWallet, metaMaskAccount } = props;
-  console.log(props);
+
   const route = useRouter();
   const isPlay = useMemo(() => {
     return HEADER_BG_COLOR.includes(route.pathname) ? true : false;

@@ -13,9 +13,8 @@ export default function useMetaMask() {
     const onboarding = useRef<MetaMaskOnboarding>();
     let WINDOW: any
     const requestMetaMaskConnection = async () => {
-        WINDOW = window
+
         if (MetaMaskOnboarding.isMetaMaskInstalled()) {
-            console.log("he")
             try {
                 const account = await WINDOW.ethereum.request({
                     method: "eth_requestAccounts",
@@ -42,10 +41,17 @@ export default function useMetaMask() {
     }
 
     useEffect(() => {
+        WINDOW = window
         if (!onboarding.current) {
             onboarding.current = new MetaMaskOnboarding();
         }
     }, []);
+
+    useEffect(() => {
+        if (MetaMaskOnboarding.isMetaMaskInstalled()) {
+            requestMetaMaskConnection()
+        }
+    }, [])
 
     return {
         metaMask: {
